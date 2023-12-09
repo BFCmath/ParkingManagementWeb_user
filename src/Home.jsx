@@ -91,6 +91,7 @@ function Home() {
                 } else {
                     setAuth(false);
                     setMessage(res.data.Error);
+                    console.log(res.data.Status);
                 }
             })
             .catch(err => console.log(err));
