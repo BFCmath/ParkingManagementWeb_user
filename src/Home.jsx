@@ -92,6 +92,7 @@ function Home() {
                     setAuth(false);
                     setMessage(res.data.Error);
                     console.log(res.data.Status);
+                    console.log(res.data.Error);
                 }
             })
             .catch(err => console.log(err));
