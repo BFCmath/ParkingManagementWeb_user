@@ -73,14 +73,14 @@ function Home() {
         navigate('/payment',{state: {studentId: student_id}});
     }
     const handleLogout = () => {
-        axios.get('http://localhost:3000/logout')
+        axios.get('https://server-parking-web.onrender.com/logout')
             .then(() => {
                 navigate('/login');
             })
             .catch(err => console.log(err));
     };
     useEffect(() => {
-        axios.get('http://localhost:3000')
+        axios.get('https://server-parking-web.onrender.com')
             .then(res => {
                 if (res.data.Status === 'Success') {
                     setAuth(true);
