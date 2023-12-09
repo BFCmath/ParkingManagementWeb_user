@@ -1,0 +1,146 @@
+/* Home.css */
+.home-container {
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 10vh;
+    background: #3498db; /* A vibrant blue background */
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+.home-container:after {
+    position: fixed;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+    background: #3498db; /* A vibrant blue background */
+    background-size: cover;
+}
+.welcome-panel {
+    text-align: center;
+    padding: 2rem;
+    max-width: 400px;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Changed from flex-start to stretch */
+    padding: 20px;
+    background: #fff;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.user-info {
+    text-align: left;
+    padding: 10px;
+    background: #f2f2f2; /* Light grey background */
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.parking-table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.parking-table th, .parking-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.parking-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+.paid-row {
+    background-color: rgb(114, 197, 114);
+}
+
+.unpaid-row {
+    background-color: orange;
+}
+.pay-button {
+    padding: 5px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(36, 227, 11);
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 10px;
+    float: right;
+    margin-left: auto; /* This will push the button to the right */
+}
+
+
+.total-row {
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Darker text color */
+    /* Add any other styling as needed */
+}
+.status-column {
+    min-width: 40px; /* Or any other suitable width */
+    /* Additional styling as needed */
+}
+.filter-container {
+    /* margin-bottom: 10px; */
+    /* order: 2; */
+    float: left;
+    margin-left: auto; 
+    margin-left: 10px;
+}
+.printQR-container{
+    padding: 5px 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 10px;
+    float: left;
+    margin-left: auto; 
+}
+
+
