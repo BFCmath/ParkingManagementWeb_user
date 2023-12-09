@@ -20,7 +20,7 @@ function Home() {
 
 
     const fetchParkingData = () => {
-        axios.get(`http://localhost:3000/parking-data?student_id=${student_id}`, { withCredentials: true })
+        axios.get(`https://server-parking-web.onrender.com/parking-data?student_id=${student_id}`, { withCredentials: true })
             .then(parkingRes => {
                 console.log('Parking data: ' + student_id);
                 console.log(parkingRes.data);
